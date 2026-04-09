@@ -188,51 +188,7 @@ export default function Pricing() {
                 –20%
               </span>
             </button>
-          </motion.div>
-          {/* <br />///////////////////////////////////////////////////////////////////////////// */}
-          <motion.div
-            variants={fadeUp}
-            transition={{ duration: 0.5 }}
-            className="mt-8 inline-flex items-center gap-3 bg-white border border-neutral-200 rounded-full px-2 py-1.5"
-          >
-            <button
-              onClick={() => setLifetime('Monthly')}
-              className={clsx(
-                "text-sm px-4 py-1.5 rounded-full transition font-medium",
-                lifetime === 'Monthly' ? "bg-brand-500 text-white" : "text-neutral-500",
-              )}
-            >
-              Monthly
-            </button>
-            <button
-              onClick={() => setLifetime("Yearly")}
-              className={clsx(
-                "text-sm px-4 py-1.5 rounded-full transition font-medium flex items-center gap-2",
-                lifetime === "Yearly" ? "bg-brand-500 text-white" : "text-neutral-500",
-              )}
-            >
-              Yearly
-              <span
-                className={clsx(
-                  "text-xs rounded-full px-2 py-0.5 font-medium transition",
-                  lifetime === "Yearly"
-                    ? "bg-white/20 text-white"
-                    : "bg-green-100 text-green-700",
-                )}
-              >
-                –20%
-              </span>
-            </button>
-            <button
-              onClick={() => setLifetime("LifeTime")}
-              className={clsx(
-                "text-sm px-4 py-1.5 rounded-full transition font-medium",
-                lifetime === "LifeTime" ? "bg-brand-500 text-white" : "text-neutral-500",
-              )}
-            >
-              LifeTime
-            </button>
-          </motion.div>
+          </motion.div>          
         </motion.div>
 
         {/* Cards */}
