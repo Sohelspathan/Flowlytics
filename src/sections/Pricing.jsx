@@ -116,7 +116,6 @@ function Cross() {
 
 export default function Pricing() {
   const [yearly, setYearly] = useState(false);
-  const [lifetime, setLifetime] = useState("");
 
   return (
     <section id="pricing" className="py-28 px-6 bg-neutral-50">
