@@ -18,7 +18,6 @@ Flowlytics is a fully responsive landing page for a fictional analytics SaaS pro
 - **Navbar** — blur-on-scroll effect, responsive hamburger menu
 - **Social proof marquee** — auto-scrolling logo bar with fade gradient edges
 - **Feature cards** — scroll-triggered stagger animations with `whileInView`
-- **Recharts dashboard preview** — bounce rate chart with an amber reference line
 - **Pricing toggle** — monthly/yearly switch with live price updates
 - **FAQ accordion** — smooth expand/collapse
 - **CTA section** — Formspree-wired contact form
@@ -33,7 +32,6 @@ Flowlytics is a fully responsive landing page for a fictional analytics SaaS pro
 | React 18 | Component architecture |
 | Tailwind CSS | Styling and responsive layout |
 | Framer Motion | Page animations, scroll triggers |
-| Recharts | Analytics chart in dashboard preview |
 | Formspree | Contact form backend |
 | Vercel | Deployment |
 
@@ -78,8 +76,6 @@ src/
 **Framer Motion scroll triggers** — `viewport={{ once: true, amount: 0.2 }}` fires animations when 20% of the element enters the viewport, giving a natural reveal without firing too early.
 
 **Pricing toggle** — driven by a single `boolean` state; yearly/monthly prices are stored per plan object and swapped conditionally.
-
-**Recharts amber reference line** — added as a `ReferenceLine` component on the bounce rate chart to indicate an industry benchmark — a detail that signals attention to product thinking, not just UI.
 
 ---
 
